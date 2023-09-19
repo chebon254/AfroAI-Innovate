@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "afroaiinnovate",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
