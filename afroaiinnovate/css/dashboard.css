@@ -14,8 +14,14 @@
     background-color: var(--white);
     color: #fff;
     transition: width 0.3s ease;
-    border-right: 1px solid var(--grey);
     overflow: hidden;
+}
+.dash-side-nav .links.nav{
+    height: 100vh;
+    border-right: 1px solid var(--grey);
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 span.dash-logo{
     display: flex;
@@ -51,6 +57,14 @@ button.link:hover{
     border-right: 3px solid var(--active-color);
 }
 button.link:hover button.link .text span{
+    color: var(--active-color) !important;
+}
+button.link.btn-content.active{
+    background-color: var(--light-grey);
+    color: var(--active-color);
+    border-right: 3px solid var(--active-color);
+}
+button.link.btn-content.active .text span{
     color: var(--active-color) !important;
 }
 button.create-btn{
@@ -221,7 +235,7 @@ button.link .text{
     margin: 10px;
 }
 .topic-card .img{
-    height: 100px;
+    height: 120px;
     width: 100%;
     overflow: hidden;
 }
@@ -237,6 +251,7 @@ button.link .text{
     font-weight: 600;
     color: var(--color);
     margin: 0px 0px 4px;
+    line-height: 20px;
 }
 .topic-card-info a:hover{
     color: var(--active-color);
@@ -245,6 +260,303 @@ button.link .text{
     font-size: 12px;
     font-weight: 400;
     color: var(--color);
-    margin: 2px 0px;
+    margin: 1px 0px;
+}
+.topic-card .pricing{
+    border-top: 1px solid var(--grey);
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topic-card .pricing span:nth-child(1){
+    font-size: 14px;
+    font-weight: 600;
+}
+.topic-card .pricing span:nth-child(2){
+    font-size: 14px;
+    font-weight: 400;
+}
+.discussion-head{
+    padding: 10px 0px;
+}
+.discussion-head h2{
+    text-align: left;
+    color: var(--color);
+}
+.discussion-cards{
+    height: fit-content;
+    padding: 10px 0px;
+}
+.discussion{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--grey);
+}
+.discussion .left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.topic-discussed{
+    padding: 0px 10px 0px;
+}
+.discussion .profile-img{
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    border: 3px solid var(--active-color);
+    overflow: hidden;
+}
+.discussion .profile-img img{
+    width: 100%;
+}
+.topic-discussed a{
+    color: var(--color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.topic-discussed a:hover{
+    color: var(--active-color);
+}
+.topic-discussed p{
+    color: var(--color);
+    font-size: 14px;
+    font-weight: 400;
 }
 /* == || DASHBOARD == */
+
+/* == SINGLE CHALLENGE == */
+.single-page, .single-pg-content{
+    height: fit-content;
+    width: 100%;
+}
+
+.spc-top{
+    height: fit-content;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-image: url('img/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.spc-top-overlay{
+    width: 100%;
+    padding: 20px;
+    background-color: #000000a9;
+}
+.competition-top span.compe-status{
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+}
+.competition-top .title-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.competition-top .title{
+    color: var(--white);
+}
+.competition-top .title h1{
+    margin: 30px 0px 0px;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+}
+.competition-top .title p{
+    margin:10px 0px 30px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+}
+.competition-top .pricing h3{
+    margin: 30px 0px 0px;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.competition-top .pricing p{
+    margin:10px 0px 30px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.competition-top .compe-in-info span{
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+}
+.competition-tabs-join-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--light-grey);
+}
+.competition-tabs-join-btn .tabs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.btn-tabbed-competition {
+    padding: 10px 20px;
+    background-color: var(--white);
+    cursor: pointer;
+    border: 0px;
+    border-bottom: 3px solid #00000000;
+    font-weight: 500;
+}
+.btn-tabbed-competition.active-tab-btn {
+    background-color: var(--light-grey);
+    border-bottom: 3px solid var(--active-color);
+}
+.btn-join button{
+    height: 48px;
+    width: fit-content;
+    padding: 2px 20px;
+    background-color: var(--active-color);
+    border: 0px;
+    border-radius: 1px;
+    color: var(--white);
+    font-weight: 500;
+}
+.spc-content > div {
+    display: none;
+}
+
+.spc-content .active-tab {
+    display: block;
+}
+
+/* CSS for the buttons and arrows */
+.spc-content .accordion-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align arrow to the right */
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color);
+}
+
+.spc-content .accordion-arrow {
+    transition: transform 0.3s; /* Add transition for arrow rotation */
+}
+
+.spc-content .accordion-content {
+    padding: 20px;
+    display: none; /* Start as closed by default */
+}
+
+.spc-content .accordion-content.active-acc {
+    display: block; /* Show when active */
+}
+.overview-tab .overview-tab-container{
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+}
+.left.tabs-nav{
+    width: 100%;
+    max-width: 700px;
+}
+.accordion-content p{
+    margin: 10px 0px;
+}
+.accordion-content ul{
+    margin-left: 20px;
+}
+.right.tabs-nav{
+    width: 280px;
+}
+.right.tabs-nav a{
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+    color: var(--color);
+    border-left: 3px solid #00000000;
+}
+.right.tabs-nav a:hover{
+    border-left: 3px solid var(--active-color);
+    background-color: var(--light-grey);
+}
+.leaderboard-tab{
+    padding: 20px;
+}
+.leaderboard-tab h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color);
+}
+.leaderboard-tab p{
+    margin: 0px 0px 20px;
+}
+.leaderboard-tab table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.leaderboard-tab th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+.leaderboard-tab th {
+    background-color: var(--color);
+    color: white;
+}
+
+.leaderboard-tab tr:nth-child(even) td {
+    background-color: var(--light-grey);
+}
+
+.leaderboard-tab tr:hover td {
+    background-color: var(--active-color);
+    color: white;
+}
+
+.leaderboard-tab .circle {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 2px solid var(--active-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.leaderboard-tab .circle img{
+    width: 100%;
+}
+.rules-tab h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color);
+    margin: 10px 0px;
+}
+.rules-tab h3{
+    font-weight: 600;
+    color: var(--color);
+    margin: 10px 0px;
+}
+.rules-tab p{
+    font-weight: 400;
+    color: var(--color);
+    margin: 10px 0px;
+}
+/* == || SINGLE CHALLENGE == */
