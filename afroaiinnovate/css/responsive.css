@@ -192,14 +192,14 @@
   }
 
   /* == Banner == */
-  section.banner {
+  section.tab-content-container {
     position: relative;
     z-index: 0;
   }
 
   .bn-img {
     position: absolute;
-    top: 0px;
+    top: 40px;
     right: 0px;
     width: 50%;
     height: 576px;

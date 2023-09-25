@@ -129,20 +129,128 @@
         <main>
             <section class="banner">
                 <div class="banner-container container">
-                    <div class="bn-text">
-                        <div class="bn-txt-holder">
-                            <h1>Africa's Top 1% minds bringing, <span id="changing-text"></span></h1>
-                            <p>A hub and ecosystem that bridges the gap between Africa's brightest minds and the global AI industry, focusing on developing AI solutions tailored for Africa's unique challenges.</p>
-                            <div class="bn-btns">
-                                <button class="find-btn">Be Part</button>
+                    <div class="tab-container">
+                        <div class="tab">Invest now</div>
+                        <div class="tab">Institutional capital</div>
+                        <div class="tab">Republic Note</div>
+                        <div class="tab">Web3 infra and advisory</div>
+                        <div class="tab">INX announcement</div>
+                    </div>
+                    <div class="content-container">
+                        <div class="tab-content">
+                            <div class="tab-content-container">
+                                <div class="bn-text">
+                                    <div class="bn-txt-holder">
+                                        <h1>Africa's Top 1% minds bringing, <span id="changing-text"></span></h1>
+                                        <p>A hub and ecosystem that bridges the gap between Africa's brightest minds and the global AI industry, focusing on developing AI solutions tailored for Africa's unique challenges.</p>
+                                        <div class="bn-btns">
+                                            <button class="find-btn">Be Part</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bn-img">
+                                    <img src="css/img/hero-illo@3x.png" alt="Lawyers">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-content-container">
+                                <div class="bn-text">
+                                    <div class="bn-txt-holder">
+                                        <h1>Africa's Top 2% minds bringing, <span id="changing-text"></span></h1>
+                                        <p>A hub and ecosystem that bridges the gap between Africa's brightest minds and the global AI industry, focusing on developing AI solutions tailored for Africa's unique challenges.</p>
+                                        <div class="bn-btns">
+                                            <button class="find-btn">Be Part</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bn-img">
+                                    <img src="css/img/hero-illo@3x.png" alt="Lawyers">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-content-container">
+                                <div class="bn-text">
+                                    <div class="bn-txt-holder">
+                                        <h1>Africa's Top 3% minds bringing, <span id="changing-text"></span></h1>
+                                        <p>A hub and ecosystem that bridges the gap between Africa's brightest minds and the global AI industry, focusing on developing AI solutions tailored for Africa's unique challenges.</p>
+                                        <div class="bn-btns">
+                                            <button class="find-btn">Be Part</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bn-img">
+                                    <img src="css/img/hero-illo@3x.png" alt="Lawyers">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-content-container">
+                                <div class="bn-text">
+                                    <div class="bn-txt-holder">
+                                        <h1>Africa's Top 4% minds bringing, <span id="changing-text"></span></h1>
+                                        <p>A hub and ecosystem that bridges the gap between Africa's brightest minds and the global AI industry, focusing on developing AI solutions tailored for Africa's unique challenges.</p>
+                                        <div class="bn-btns">
+                                            <button class="find-btn">Be Part</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bn-img">
+                                    <img src="css/img/hero-illo@3x.png" alt="Lawyers">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-content-container">
+                                <div class="bn-text">
+                                    <div class="bn-txt-holder">
+                                        <h1>Africa's Top 5% minds bringing, <span id="changing-text"></span></h1>
+                                        <p>A hub and ecosystem that bridges the gap between Africa's brightest minds and the global AI industry, focusing on developing AI solutions tailored for Africa's unique challenges.</p>
+                                        <div class="bn-btns">
+                                            <button class="find-btn">Be Part</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bn-img">
+                                    <img src="css/img/hero-illo@3x.png" alt="Lawyers">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class=""></div>
                 </div>
-                <div class="bn-img">
-                    <img src="css/img/hero-illo@3x.png" alt="Lawyers">
-                </div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        // Get all tab elements and tab content elements
+                        const tabs = document.querySelectorAll(".tab");
+                        const tabContents = document.querySelectorAll(".tab-content");
+                    
+                        // Add click event listeners to each tab
+                        tabs.forEach((tab, index) => {
+                            tab.addEventListener("click", () => {
+                                // Hide all tab content elements
+                                tabContents.forEach((content) => {
+                                    content.style.display = "none";
+                                });
+                    
+                                // Show the selected tab content
+                                tabContents[index].style.display = "block";
+                    
+                                // Remove the "active" class from all tabs
+                                tabs.forEach((t) => {
+                                    t.classList.remove("active");
+                                });
+                    
+                                // Add the "active" class to the clicked tab
+                                tab.classList.add("active");
+                            });
+                        });
+                    
+                        // Show the content of the first tab by default
+                        tabContents[0].style.display = "block";
+                        tabs[0].classList.add("active");
+                    });
+                </script>
             </section>
             <section class="community-talent">
                 <div class="community-talent-contain container">
