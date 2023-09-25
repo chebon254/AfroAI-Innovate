@@ -397,156 +397,132 @@ section.updates{
     flex-wrap: wrap;
     padding: 20px 0px;
 }
-.update-card{
-    width: 280px;
-    border: 1px solid var(--grey);
-    border-radius: 20px;
-    padding: 20px;
+a.update-card{
+    height: fit-content;
+    width: 30%;
+    max-width: 360px;
+    min-width: 280px;
+    border: 2px solid var(--light-grey);
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
 }
-
-.update-card .top-info{
+a.update-card .card-image{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+a.update-card .card-image img{
+    width: 100%;
+}
+a.update-card .card-text{
+    position: relative;
+    padding: 40px 10px 10px;
+}
+a.update-card .card-text .logo-image{
+    height: 80px;
+    width: 80px;
+    box-shadow: 2px 2px 12px #00000033;
+    border-radius: 10px;
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    overflow: hidden;
+}
+a.update-card .logo-image img{
+    width: 100% !important;
+}
+a.update-card .info-text h2{
+    color: var(--color);
+    margin: 0px 0px 10px;
+}
+a.update-card .info-text p{
+    color: var(--color);
+    font-weight: 500;
+    margin: 0px 0px 10px;
+}
+a.update-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+a.update-card .card-tags{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 14px 0px 6px;
+}
+a.update-card .card-tags span{
+    padding: 2px 5px;
+    background-color: var(--color);
+    color: var(--white);
+    margin: 2px 2px 2px 0px;
+}
+a.update-card .status-text{
+    border-top: 2px solid var(--light-grey);
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
 }
-.update-card .top-info h2{
-    font-size: 14px;
-}
-.update-card .top-info img{
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-}
-.update-card .btm-info{
-    padding: 4px 0px 0px;
-}
-.update-card .btm-info span{
-    font-size: 14px;
+a.update-card .status-text span:nth-child(1){
+    color: var(--color);
     font-weight: 400;
 }
-.update-card .btm-info p{
-    font-size: 14px;
-    font-weight: 400;
-    margin: 10px 0px;
+a.update-card .status-text span:nth-child(2){
+    color: var(--color);
+    font-weight: 500;
+}
+a.update-card.model .card-text,
+a.update-card.competition .card-text{
+    padding-top: 20px;
 }
 /* == || UPDATES == */
 
-
-/* == How It Works == */
-section.hiworks{
-    width: 100%;
-    height: fit-content;
-    background-color: var(--white);
-    padding: 64px 0px;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
+/* == FOUNDERS == */
+section.founders{
+    padding: 30px 0px;
 }
-.hiworks-holder{
-    position: relative;
-    background-color: #00000000;
-    z-index: 2;
-}
-.hiworks img.hiwork-back-images{
-    position: absolute;
-    width: 400px;
-    z-index: 1;
-}
-.hiworks img.hiwork-back-images.one{
-    top: 0px;
-    left: 0px;
-}
-.hiworks img.hiwork-back-images.two{
-    top: 0px;
-    right: 0px;
-}
-.hiworks-head{
-    text-align: center;
-}
-.hiworks-head p.top{
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--active-color);
-}
-.hiworks-head h2.heading{
-    font-size: 32px;
-    font-weight: 600;
-    color: var(--color);
-}
-.hiworks-head p.btm{
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--color);
-}
-.hiworks-cards{
-    height: fit-content;
-    width: 100%;
+.founders-contain{
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 0px;
 }
-.hiwork-card{
+.founders-contain .left,
+.founders-contain .right{
     width: 100%;
-    max-width: 350px;
     min-width: 280px;
-    margin: 10px;
+    max-width: 560px;
 }
-.hiwork-card .icon{
-    height: 48px;
-    width: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px auto -24px;
-    background-color: var(--active-color);
-    border-radius: 10px;
-    position: relative;
-    z-index: 2;
+.founders-contain .left h1{
+    font-size: 50px;
+    color: var(--background-color);
+    margin: 0px 0px 20px;
 }
-
-.hiwork-card .icon svg{
-    fill: #ffffff;
-}
-.h-card-info{
-    padding: 20px 20px 30px;
-    background-color: var(--light-grey);
-    border-radius: 20px;
-    position: relative;
-    z-index: 1;
-}
-.h-card-info h3{
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--black);
-    text-align: center;
-    margin: 25px 0px 0px;
-}
-.h-card-info p{
+.founders-contain .left p{
     font-size: 16px;
-    font-weight: 400;
-    color: var(--color);
-    text-align: center;
-    margin: 15px 0px 0px;
+    color: var(--background-color);
+    margin: 0px 0px 0px;
+    font-weight: 500;
 }
-.hiworks-btn{
-    padding: 20px 0px;
+.founders-contain .right .founders-card{
+    margin: 16px 0px;
+}
+.founders-card .card-top{
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.hiworks-btn button{
-    height: 62px;
-    width: 200px;
-    background-color: var(--active-color);
-    border-radius: 10px;
-    font-size: 18px;
-    color: var(--white);
+    justify-content: space-between;
+    font-size: 20px;
     font-weight: 500;
-    border: 0px;
 }
-/* == || How It Works == */
+.founders-contain .right p{
+    font-size: 16px;
+    color: var(--background-color);
+    margin: 0px 0px 0px;
+    font-weight: 500;
+}
+/* == || FOUNDERS == */
 
 /* == Newsletter == */
 section.newsletter{
