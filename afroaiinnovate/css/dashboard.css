@@ -159,8 +159,11 @@ button.link .text{
 }
 .intro-text.dci{
     width: 100%;
-    max-width: 400px;
     min-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .intro-text.dci h1{
     color: var(--color);
