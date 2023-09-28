@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- == META OG Social Media Ads == -->
+    <meta property="og:title" content="AfroAI Innovate" />
+    <meta property="og:url" content="https://afroaiinnovate.web.app" />
+    <meta property="og:image" content="https://afroaiinnovate.web.app/css/img/Facebook.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:desc revealription" content="AfroAI Innovate Upcoming Event" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AfroAI Innovate">
+    <meta name="twitter:title" content="AfroAI Innovate">
+    <meta name="twitter:desc revealription" content="AfroAI Innovate Upcoming Event">
+    <meta name="twitter:image" content="https://afroaiinnovate.web.app/css/img/Twitter.png">
+    <meta name="twitter:player" content="https://afroaiinnovate.web.app">
+    <meta name="twitter:player:width" content="280">
+    <meta name="twitter:player:height" content="150">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="css/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/favicon/favicon-16x16.png">
+    <link rel="manifest" href="css/favicon/site.webmanifest">
+    <link rel="mask-icon" href="css/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="css/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="css/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>AfroAI Innovate</title>
+
+    <!-- == Style == -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- == Fonts == -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- == Icons == -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- == Stylesheet == -->
+    <style>
+        .form-create {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: fit-content;
+            padding: 60px 0px;
+        }
+
+        form.new-create {
+            padding: 10px;
+            width: 100%;
+            max-width: 800px;
+            min-width: 280px;
+        }
+
+        form.new-create label {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--color);
+            margin: 0px 0px 10px;
+        }
+
+        form.new-create input {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--color);
+            margin: 0px 0px 10px;
+            width: 100%;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            height: 60px;
+            outline: none;
+            padding: 2px 20px;
+        }
+
+        form.new-create input.radio {
+            height: 20px !important;
+            width: 20px !important;
+            margin-left: 10px;
+        }
+
+        form.new-create .radio-form {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .toolbar {
+	padding: 16px;
+	background: #eee;
+}
+.toolbar .head {
+	display: flex;
+	grid-gap: 10px;
+	margin-bottom: 16px;
+	flex-wrap: wrap;
+}
+.toolbar .head > input {
+	max-width: 100px;
+	padding: 6px 10px;
+	border-radius: 6px;
+	border: 2px solid #ddd;
+	outline: none;
+}
+.toolbar .head select {
+	background: #fff;
+	border: 2px solid #ddd;
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+}
+.toolbar .head .color {
+	background: #fff;
+	border: 2px solid #ddd;
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	grid-gap: 6px;
+	padding: 0 10px;
+}
+.toolbar .head .color span {
+	font-size: 14px;
+}
+.toolbar .head .color input {
+	border: none;
+	padding: 0;
+	width: 26px;
+	height: 26px;
+	background: #fff;
+	cursor: pointer;
+}
+.toolbar .head .color input::-moz-color-swatch {
+	width: 20px;
+	height: 20px;
+	border: none;
+	border-radius: 50%;
+}
+.toolbar .btn-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	grid-gap: 10px;
+}
+.toolbar .btn-toolbar button {
+	background: #fff;
+	border: 2px solid #ddd;
+	border-radius: 6px;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+}
+.toolbar .btn-toolbar button:hover {
+	background: #f3f3f3;
+}
+#content {
+	padding: 16px;
+	outline: none;
+	max-height: 50vh;
+	overflow: auto;
+    min-height: 100px;
+    border: 1.4px solid var(--grey);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#show-code[data-active="true"] {
+	background: #eee;
+}
+.btn-submit{
+    height: 50px;
+    width: 220px;
+    border: 0px;
+    background-color: var(--active-color);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+}
+    </style>
+
+</head>
+
+<body>
+    <!-- == Header == -->
+    <header>
+        <nav>
+            <div class="nav-container container">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text-one">AfroAI</span>
+                        <span class="logo-text-two">Innovate</span>
+                    </a>
+                </div>
+                <div class="links" id="links">
+                    <div class="cancel">
+                        <span class="cancel-btn"><i class="fas fa-times"></i></span>
+                    </div>
+                    <div class="menu-item-lf">
+                        <button class="find-btn" onclick="location.href='dashboard.html'">Dashboard</button>
+                        <a href="dashboard.html">Models</a>
+                        <a href="dashboard.html">Datasets</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">For Newbies <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512" fill="currentColor" width="8" class="ml-2 h-3 w-3">
+                                <path
+                                    d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z">
+                                </path>
+                            </svg></button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-extras">
+                                <div class="drop-extra">
+                                    <h4>FOR NEWBIES</h4>
+                                    <div class="drop-extra-links">
+                                        <a href="#">Marketing services</a>
+                                        <a href="#">SEO</a>
+                                        <a href="#">Copywriting</a>
+                                        <a href="#">Social media management</a>
+                                        <a href="#">Google Ads</a>
+                                        <a href="#">Legal board</a>
+                                    </div>
+                                </div>
+                                <div class="drop-extra">
+                                    <h4>MEMBERSHIP</h4>
+                                    <div class="drop-extra-links">
+                                        <a href="#">How it works</a>
+                                        <a href="#">Pricing</a>
+                                        <div class="drop-extras-btns">
+                                            <button class="login" onclick="location.href='login.html'">Login</button>
+                                            <span>or</span>
+                                            <button class="register"
+                                                onclick="location.href='register.html'">Register</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-bar">
+                    <span class="menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                            <g clip-path="url(#clip0_302_221)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 9.84375C0 9.32161 0.207421 8.82085 0.576634 8.45163C0.945846 8.08242 1.44661 7.875 1.96875 7.875H40.0312C40.5534 7.875 41.0542 8.08242 41.4234 8.45163C41.7926 8.82085 42 9.32161 42 9.84375C42 10.3659 41.7926 10.8667 41.4234 11.2359C41.0542 11.6051 40.5534 11.8125 40.0312 11.8125H1.96875C1.44661 11.8125 0.945846 11.6051 0.576634 11.2359C0.207421 10.8667 0 10.3659 0 9.84375ZM0 21C0 20.4779 0.207421 19.9771 0.576634 19.6079C0.945846 19.2387 1.44661 19.0312 1.96875 19.0312H40.0312C40.5534 19.0312 41.0542 19.2387 41.4234 19.6079C41.7926 19.9771 42 20.4779 42 21C42 21.5221 41.7926 22.0229 41.4234 22.3921C41.0542 22.7613 40.5534 22.9688 40.0312 22.9688H1.96875C1.44661 22.9688 0.945846 22.7613 0.576634 22.3921C0.207421 22.0229 0 21.5221 0 21ZM1.96875 30.1875C1.44661 30.1875 0.945846 30.3949 0.576634 30.7641C0.207421 31.1333 0 31.6341 0 32.1562C0 32.6784 0.207421 33.1792 0.576634 33.5484C0.945846 33.9176 1.44661 34.125 1.96875 34.125H40.0312C40.5534 34.125 41.0542 33.9176 41.4234 33.5484C41.7926 33.1792 42 32.6784 42 32.1562C42 31.6341 41.7926 31.1333 41.4234 30.7641C41.0542 30.3949 40.5534 30.1875 40.0312 30.1875H1.96875Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_302_221">
+                                    <rect width="42" height="42" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- == || Header == -->
+
+    <!-- == Main == -->
+    <main>
+        <div class="container form-create">
+            <form class="new-create">
+                <label for="title">Title</label> <br>
+                <input type="text" name="title" placeholder="Title...">
+                <br>
+                <label for="overview">Overview</label> <br>
+                <div class="toolbar">
+                    <div class="head">
+                        <select onchange="formatDoc('formatBlock', this.value); this.selectedIndex=0;">
+                            <option value="" selected="" hidden="" disabled="">Format</option>
+                            <option value="h1">Heading 1</option>
+                            <option value="h2">Heading 2</option>
+                            <option value="h3">Heading 3</option>
+                            <option value="h4">Heading 4</option>
+                            <option value="h5">Heading 5</option>
+                            <option value="h6">Heading 6</option>
+                            <option value="p">Paragraph</option>
+                        </select>
+                        <select onchange="formatDoc('fontSize', this.value); this.selectedIndex=0;">
+                            <option value="" selected="" hidden="" disabled="">Font size</option>
+                            <option value="1">Extra small</option>
+                            <option value="2">Small</option>
+                            <option value="3">Regular</option>
+                            <option value="4">Medium</option>
+                            <option value="5">Large</option>
+                            <option value="6">Extra Large</option>
+                            <option value="7">Big</option>
+                        </select>
+                    </div>
+                    <div class="btn-toolbar">
+                        <button onclick="formatDoc('undo')"><i class='bx bx-undo'></i></button>
+                        <button onclick="formatDoc('redo')"><i class='bx bx-redo'></i></button>
+                        <button onclick="formatDoc('bold')"><i class='bx bx-bold'></i></button>
+                        <button onclick="formatDoc('underline')"><i class='bx bx-underline'></i></button>
+                        <button onclick="formatDoc('italic')"><i class='bx bx-italic'></i></button>
+                        <button onclick="formatDoc('strikeThrough')"><i class='bx bx-strikethrough'></i></button>
+                        <button onclick="formatDoc('justifyLeft')"><i class='bx bx-align-left'></i></button>
+                        <button onclick="formatDoc('justifyCenter')"><i class='bx bx-align-middle'></i></button>
+                        <button onclick="formatDoc('justifyRight')"><i class='bx bx-align-right'></i></button>
+                        <button onclick="formatDoc('justifyFull')"><i class='bx bx-align-justify'></i></button>
+                        <button onclick="formatDoc('insertOrderedList')"><i class='bx bx-list-ol'></i></button>
+                        <button onclick="formatDoc('insertUnorderedList')"><i class='bx bx-list-ul'></i></button>
+                        <button onclick="addLink()"><i class='bx bx-link'></i></button>
+                        <button onclick="formatDoc('unlink')"><i class='bx bx-unlink'></i></button>
+                        <button id="show-code" data-active="false">&lt;/&gt;</button>
+                    </div>
+                </div>
+                <div id="content" contenteditable="true" spellcheck="false">
+
+                </div>
+                <br>
+                <div class="radio-form">
+                    <label for="data">Enable Data</label>
+                    <input class="radio" type="radio" name="data" placeholder="Data...">
+                </div>
+                <br>
+                <div class="radio-form">
+                    <label for="discussion">Enable Discussion</label>
+                    <input class="radio" type="radio" name="discussion" placeholder="Discussion...">
+                </div>
+                <br>
+                <label for="rules">Rules</label><br>
+                <div class="toolbar">
+                    <div class="head">
+                        <select onchange="formatDoc('formatBlock', this.value); this.selectedIndex=0;">
+                            <option value="" selected="" hidden="" disabled="">Format</option>
+                            <option value="h1">Heading 1</option>
+                            <option value="h2">Heading 2</option>
+                            <option value="h3">Heading 3</option>
+                            <option value="h4">Heading 4</option>
+                            <option value="h5">Heading 5</option>
+                            <option value="h6">Heading 6</option>
+                            <option value="p">Paragraph</option>
+                        </select>
+                        <select onchange="formatDoc('fontSize', this.value); this.selectedIndex=0;">
+                            <option value="" selected="" hidden="" disabled="">Font size</option>
+                            <option value="1">Extra small</option>
+                            <option value="2">Small</option>
+                            <option value="3">Regular</option>
+                            <option value="4">Medium</option>
+                            <option value="5">Large</option>
+                            <option value="6">Extra Large</option>
+                            <option value="7">Big</option>
+                        </select>
+                    </div>
+                    <div class="btn-toolbar">
+                        <button onclick="formatDoc('undo')"><i class='bx bx-undo'></i></button>
+                        <button onclick="formatDoc('redo')"><i class='bx bx-redo'></i></button>
+                        <button onclick="formatDoc('bold')"><i class='bx bx-bold'></i></button>
+                        <button onclick="formatDoc('underline')"><i class='bx bx-underline'></i></button>
+                        <button onclick="formatDoc('italic')"><i class='bx bx-italic'></i></button>
+                        <button onclick="formatDoc('strikeThrough')"><i class='bx bx-strikethrough'></i></button>
+                        <button onclick="formatDoc('justifyLeft')"><i class='bx bx-align-left'></i></button>
+                        <button onclick="formatDoc('justifyCenter')"><i class='bx bx-align-middle'></i></button>
+                        <button onclick="formatDoc('justifyRight')"><i class='bx bx-align-right'></i></button>
+                        <button onclick="formatDoc('justifyFull')"><i class='bx bx-align-justify'></i></button>
+                        <button onclick="formatDoc('insertOrderedList')"><i class='bx bx-list-ol'></i></button>
+                        <button onclick="formatDoc('insertUnorderedList')"><i class='bx bx-list-ul'></i></button>
+                        <button onclick="addLink()"><i class='bx bx-link'></i></button>
+                        <button onclick="formatDoc('unlink')"><i class='bx bx-unlink'></i></button>
+                        <button id="show-code" data-active="false">&lt;/&gt;</button>
+                    </div>
+                </div>
+                <div id="content" contenteditable="true" spellcheck="false">
+
+                </div>
+                <br>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <!-- == || Main == -->
+
+    <!-- == Footer == -->
+    <footer>
+        <div class="ft-holder container">
+            <div class="top-ft">
+                <div class="ft-column social">
+                    <h1>AfroAIInnovate</h1>
+                    <p>Find the right lawyer</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="ft-column link">
+                    <h2>Product</h2>
+                    <ul>
+                        <li><a href="#">Challenges</a></li>
+                        <li><a href="#">Datasets</a></li>
+                        <li><a href="#">Models</a></li>
+                        <li><a href="#">Notebooks</a></li>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Discussion</a></li>
+                    </ul>
+                </div>
+                <div class="ft-column link">
+                    <h2>Documentation</h2>
+                    <ul>
+                        <li><a href="#">Challenges</a></li>
+                        <li><a href="#">Datasets</a></li>
+                        <li><a href="#">Models</a></li>
+                        <li><a href="#">Notebooks</a></li>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Public API</a></li>
+                    </ul>
+                </div>
+                <div class="ft-column link">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Host a Challenge</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-ft">
+                <div class="copyright">
+                    <p>© AfroAI Innovate Limited 2023. All rights reserved.</p>
+                </div>
+                <div class="ft-legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>.</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- == || Footer == -->
+
+    <!-- == Scripts == -->
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function formatDoc(cmd, value = null) {
+            if (value) {
+                document.execCommand(cmd, false, value);
+            } else {
+                document.execCommand(cmd);
+            }
+        }
+
+        function addLink() {
+            const url = prompt('Insert url');
+            formatDoc('createLink', url);
+        }
+
+        const content = document.getElementById('content');
+
+        content.addEventListener('mouseenter', function () {
+            const a = content.querySelectorAll('a');
+            a.forEach(item => {
+                item.addEventListener('mouseenter', function () {
+                    content.setAttribute('contenteditable', false);
+                    item.target = '_blank';
+                })
+                item.addEventListener('mouseleave', function () {
+                    content.setAttribute('contenteditable', true);
+                })
+            })
+        })
+
+
+        const showCode = document.getElementById('show-code');
+        let active = false;
+
+        showCode.addEventListener('click', function () {
+            showCode.dataset.active = !active;
+            active = !active
+            if (active) {
+                content.textContent = content.innerHTML;
+                content.setAttribute('contenteditable', false);
+            } else {
+                content.innerHTML = content.textContent;
+                content.setAttribute('contenteditable', true);
+            }
+        })
+
+
+
+        const filename = document.getElementById('filename');
+
+        function fileHandle(value) {
+            if (value === 'new') {
+                content.innerHTML = '';
+                filename.value = 'untitled';
+            } else if (value === 'txt') {
+                const blob = new Blob([content.innerText])
+                const url = URL.createObjectURL(blob)
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = `${filename.value}.txt`;
+                link.click();
+            } else if (value === 'pdf') {
+                html2pdf(content).save(filename.value);
+            }
+        }
+    </script>
+</body>
+
+</html>
